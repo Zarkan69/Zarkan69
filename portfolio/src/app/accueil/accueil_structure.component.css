@@ -27,9 +27,6 @@
 }
 
 #bottom {
-    grid-area: bottom;
-    justify-content: center;
-    align-content: center;
     border: solid 5px var(--secondary-color);
 }
 
