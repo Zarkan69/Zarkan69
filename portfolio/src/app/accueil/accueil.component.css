@@ -12,7 +12,7 @@
     grid-area: info;
     display: flex;
     justify-content: center;
-    border: solid 5px var(--primary-color);
+    /*border: solid 5px var(--primary-color);*/
 }
 
 #info_list {
@@ -52,6 +52,7 @@ nav {
     height: 20%;
     align-items: center;
     margin-top: 10px;
+    margin-left: 25%;
 }
 
 #nav_list {
@@ -91,7 +92,7 @@ nav {
 
 #animation {
     position: absolute;
-    margin-top: 25px;
+    margin-top: 32px;
     height: 0.3rem;
     border-radius: 0.5rem;
     transition: ease-in-out 0.4s;
@@ -127,7 +128,7 @@ nav {
 
 #compétences {
     display: grid;
-    height: 100%;
+    height: 100vh;
     width: 100%;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 3.5fr;
@@ -143,7 +144,7 @@ nav {
 .compétences_span>p {
     font-weight: bold;
     font-size: clamp(1rem, 1.5vw, 2rem);
-    color: var(--text-color);
+    color: var(--text2-color);
 }
 
 .compétences_desc {
@@ -152,7 +153,7 @@ nav {
     height: fit-content;
     font-weight: bold;
     font-size: clamp(1rem, 1vw, 2rem);
-    color: var(--text-color);
+    color: var(--text2-color);
 }
 
 #titre2 {
@@ -178,6 +179,10 @@ nav {
     gap: 20px;
     margin-left: 10%;
     margin-right: 10%;
+    height: 100vh;
+    margin-top: 50px;
+    margin-bottom: 0;
+    padding: 0;
 }
 
 #compétences_list_1 {
@@ -187,7 +192,6 @@ nav {
     grid-template-rows: 1.5fr 1fr;
     grid-template-areas: "cp1" "cp2";
     gap: 20px;
-
 }
 
 #compétences_list_2 {
@@ -201,22 +205,22 @@ nav {
 
 #cp1 {
     grid-area: cp1;
-    border: solid 5px var(--secondary-color);
+    background-color: var(--accent-color);
 }
 
 #cp2 {
     grid-area: cp2;
-    border: solid 5px var(--secondary-color);
+    background-color: var(--accent-color);
 }
 
 #cp3 {
     grid-area: cp3;
-    border: solid 5px var(--secondary-color);
+    background-color: var(--accent-color);
 }
 
 #cp4 {
     grid-area: cp4;
-    border: solid 5px var(--secondary-color);
+    background-color: var(--accent-color);
 }
 
 .compétences_element {
@@ -228,4 +232,63 @@ nav {
     height: 42px;
     align-self: center;
     margin-left: auto;
+}
+
+#pp {
+    border-radius: 1px solid var(--accent-color);
+    justify-content: center;
+    align-items: center;
+}
+
+#pp>img {
+    display: flex;
+    margin: auto;
+    border-radius: 50%;
+    width: 128px;
+    height: 128px;
+}
+
+#quick_desc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#name {
+    display: flex;
+    color: var(--text-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+#alias {
+    display: flex;
+    color: var(--text-color);
+    font-size: 1rem;
+    margin: 0;
+}
+
+#alias_name {
+    display: flex;
+    color: var(--text-color);
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+#job {
+    display: flex;
+    color: var(--text-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+    margin-top: 15%;
+}
+
+#decorateur {
+    display: flex;
+    background-color: var(--accent-color);
+    z-index: 99;
 }

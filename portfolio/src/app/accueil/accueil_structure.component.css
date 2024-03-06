@@ -17,17 +17,17 @@
     grid-template-areas: "profile" "info";
     grid-gap: 10px;
     min-width: fit-content;
-    border: solid 5px var(--accent2-color);
+    /*border: solid 5px var(--accent2-color);*/
 }
 
 #top {
     grid-area: top;
     justify-content: center;
-    border: solid 5px var(--secondary-color);
+    /*border: solid 5px var(--secondary-color);*/
 }
 
 #bottom {
-    border: solid 5px var(--secondary-color);
+    /*border: solid 5px var(--secondary-color);*/
 }
 
 ul {
